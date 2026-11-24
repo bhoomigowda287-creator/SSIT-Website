@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student project website for the Robotics and Artificial Intelligence department at SSIT Tumkur.">
+  <title>Robotics & AI | SSIT Tumkur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="SSIT Robotics and AI home">
+      <span class="brand-mark">SSIT</span>
+      <span class="brand-copy">ROBOTICS & ARTIFICIAL INTELLIGENCE<small>STUDENT PROJECT WEBSITE</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#areas">Focus Areas</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">SSIT TUMKUR · STUDENT PROJECT</p>
+        <h1>Robotics &<br>Artificial Intelligence</h1>
+        <p class="hero-text">Building intelligent systems for a smarter tomorrow.</p>
+        <a class="button" href="#projects">Explore student projects <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="robot-face"><span>●</span><span>●</span><div class="robot-mouth"></div></div>
+        <div class="circuit circuit-one"></div><div class="circuit circuit-two"></div>
+        <span class="ai-label">AI</span>
+      </div>
+    </section>
+
+    <section class="feature-strip" aria-label="Department highlights">
+      <article class="feature"><span class="feature-icon">⚙</span><h3>Hands-on Learning</h3><p>Learn by building and testing.</p></article>
+      <article class="feature"><span class="feature-icon">▦</span><h3>Robotics</h3><p>Explore sensors, motors and control.</p></article>
+      <article class="feature"><span class="feature-icon">✳</span><h3>Artificial Intelligence</h3><p>Discover data, models and smart systems.</p></article>
+      <article class="feature"><span class="feature-icon">⌘</span><h3>Student Projects</h3><p>Turn ideas into working prototypes.</p></article>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW US</p>
+        <h2>About the Department</h2>
+        <p>This student-created website introduces the fields of Robotics and Artificial Intelligence.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-symbol">🤖</div>
+          <div><h3>Robotics</h3><p>Combine mechanical systems, electronics, sensors and programming to build machines that interact with the world.</p></div>
+        </div>
+        <div class="about-card">
+          <div class="about-symbol">🧠</div>
+          <div><h3>Artificial Intelligence</h3><p>Study how computers can identify patterns, understand information and support decision-making.</p></div>
+        </div>
+      </div>
+      <p class="notice"><strong>Project note:</strong> This is an independent student project, not an official SSIT website. Add verified college details only after checking them.</p>
+    </section>
+
+    <section class="section focus-section" id="areas">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT WE EXPLORE</p>
+        <h2>Focus Areas</h2>
+      </div>
+      <div class="focus-grid">
+        <article class="focus-card"><span>01</span><h3>Robot Design</h3><p>Robot structure, movement and basic mechanisms.</p></article>
+        <article class="focus-card"><span>02</span><h3>Sensors & Control</h3><p>Collect data from the environment and control actions.</p></article>
+        <article class="focus-card"><span>03</span><h3>Machine Learning</h3><p>Train systems to learn patterns from data.</p></article>
+        <article class="focus-card"><span>04</span><h3>Computer Vision</h3><p>Use images and video as information for a computer.</p></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading heading-row">
+        <div><p class="eyebrow">LEARN BY MAKING</p><h2>Featured Student Projects</h2></div>
+        <p class="project-hint">Select a card to learn more.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual visual-rover" aria-hidden="true"><span class="rover-body"></span><span class="wheel wheel-a"></span><span class="wheel wheel-b"></span><span class="rover-eye"></span></div>
+          <div class="project-info"><span class="tag">ROBOTICS</span><h3>Obstacle Avoiding Robot</h3><p>A small robot uses a distance sensor to detect obstacles and change direction.</p><button class="details-button" data-project="rover">View details →</button></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-arm" aria-hidden="true"><span class="arm-base"></span><span class="arm-joint joint-a"></span><span class="arm-link link-a"></span><span class="arm-joint joint-b"></span><span class="arm-link link-b"></span><span class="arm-claw"></span></div>
+          <div class="project-info"><span class="tag">AUTOMATION</span><h3>Mini Robotic Arm</h3><p>A servo-driven arm demonstrates how joints can move and pick up light objects.</p><button class="details-button" data-project="arm">View details →</button></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-waste" aria-hidden="true"><span class="bin bin-green">BIO</span><span class="bin bin-blue">DRY</span><span class="spark">✦</span></div>
+          <div class="project-info"><span class="tag">AI CONCEPT</span><h3>Smart Waste Classifier</h3><p>A learning prototype that explores classifying waste images into categories.</p><button class="details-button" data-project="waste">View details →</button></div>
+        </article>
+      </div>
+      <div class="project-detail" id="project-detail" aria-live="polite">
+        <button class="detail-close" aria-label="Close project details">×</button>
+        <h3 id="detail-title">Choose a project</h3>
+        <p id="detail-text">Click “View details” on a project card to see its objective and components.</p>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div><p class="eyebrow">START SMALL. BUILD SMART.</p><h2>Your next idea could become a robot.</h2><p>Begin with a simple problem, make a prototype, test it, and improve it.</p></div>
+      <a class="button button-light" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark">SSIT</span><span class="brand-copy">ROBOTICS & AI<small>STUDENT PROJECT WEBSITE</small></span></a><p>A student-built learning project about Robotics and Artificial Intelligence.</p></div>
+      <div><h3>Quick links</h3><a href="#about">About</a><a href="#areas">Focus Areas</a><a href="#projects">Projects</a></div>
+      <div><h3>Contact section</h3><p>Replace this area with verified department contact details if your lecturer approves.</p><a href="https://www.ssit.edu.in/" target="_blank" rel="noopener noreferrer">Visit SSIT website ↗</a></div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Student project · SSIT Tumkur. Not an official college website.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
